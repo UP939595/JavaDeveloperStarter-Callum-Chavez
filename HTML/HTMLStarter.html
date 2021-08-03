@@ -1,0 +1,271 @@
+<!-- HTML Basics -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <table>
+    <colgroup span="4"></colgroup>
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Address</th>
+      <th>Phone</th>
+    </tr>
+    <tr>
+      <td>Kelly</td>
+      <td>Sherman</td>
+      <td>7985 Laoreet, Road</td>
+      <td>02413563736</td>
+    </tr>
+    <tr>
+      <td>Jackson</td>
+      <td>Simpson</td>
+      <td>7985 Pharetra, Road</td>     
+      <td>05502258880</td>
+    </tr>
+    <tr>
+      <td>Cade</td>
+      <td>Quinn</td>
+      <td>Ap #352-3420 Augue Street</td>
+      <td>01825135292</td>
+    </tr>
+    <tr>
+      <td>Driscoll</td>
+      <td>Mcguire</td>
+      <td>P.O. Box 853, 2728 Elit. Road</td>
+      <td>01912666695</td>
+    </tr>
+  </table>
+  
+  
+  <form action="/my-handling-form-page" method="post">
+    <ul style="list-style-type:none;">
+     <li>
+       <input type="text" id="name" name="user_text">
+     </li>
+     <li>
+       <input type="number" id="number" name="user_number">
+     </li>
+     <li>
+       <textarea id="msg" name="user_message"></textarea>
+     </li>
+     <li class="button">
+      <button type="button" onclick="myScript();">Submit</button>
+    </li>
+    </ul>
+   </form>
+  <script>
+    function myScript(){
+        let name = document.getElementById("name").value;
+        let number = document.getElementById("number").value;
+        let msg = document.getElementById("msg").value;  
+        console.log(name, number, msg);
+    }
+  </script>
+  <img src="images/OldWomanOnStairlift.jpg"></img>
+  
+  <form>
+    <legend>Choose your interests</legend>
+    <div>
+      <input type="checkbox" id="coding" name="interest" value="coding">
+      <label for="coding">Coding</label>
+    </div>
+    <div>
+      <input type="checkbox" id="music" name="interest" value="music">
+      <label for="music">Music</label>
+    </div>
+    <input type="radio" name="season" value="winter">Winter
+    <input type="radio" name="season" value="spring">Spring
+    <input type="radio" name="season" value="summer">Summer
+    <input type="radio" name="season" value="autumn">Autumn
+  </form>
+  
+  <textarea id="msg2" name="user_message2"></textarea>
+  
+  <h1>My blog</h1>
+    <div id="introduction">
+        <p>Welcome to my blog! There's not much stuff here but I hope you enjoy!</p>
+        <div id="wholepage">
+            <div id="p1">
+                <div id="new game">
+                    <h2 class="bigText">New Game</h2>
+                    <div id="date">07 June 2020</div>
+                </div>
+                <div id="dev simulator">
+                    <h3>Dev Simulator</h3>
+                    <p>It's called "Dev Simulator" and it's great! It's like coding, but as a game!</p>
+                </div>
+            </div>
+
+            <div id="p2">
+                <div id="exampleDiv">
+                    <h2>Strange clouds</h2>
+                    <div id="date2">14 Apr 2020</div>
+                </div>
+                <div id = "uninterestingstrangeclouds">
+                    <h3>Today I saw some strange looking clouds...</h3>
+                    <p>They really looked like huge cloud-shaped clouds...</p>
+                    <h3>Not so interesting</h3>
+                    <p>Now that I think about it, they were not that interesting</p>
+                </div>
+            </div>
+
+            <div id="p3">
+                <div id="greatwebsite">
+                    <h2>Great website</h2>
+                    <div>05 Jan 2020</div>
+                </div>
+                <div id="colours">
+                    <h3>The colours!</h3>
+                    <p>The colours they chose for this website are absolutely gorgeous!</p>
+                    <h3>Articles</h3>
+                    <p>The blog did not have many articles since it is quite new but it's a great start</p>
+                    <h3>CAT PICTURES!!!!</h3>
+                    <p>Obviously, the most important part of it are the cat pictures.</p>
+                </div>
+                <div id="testDiv">
+                </div>
+                <script>
+                  //Javascript Basics
+                let tag = document.createElement("p");
+                let text = document.createTextNode("A short paragraph");
+                tag.appendChild(text);
+                let div = document.getElementById("testDiv");
+                div.appendChild(tag);
+                </script>
+                <script>
+                const numbers = [9, 0, 3, 5, 7, 8, 2];
+                console.log(numbers.find(checkNum));
+                
+                function checkNum(num) {
+                  return num == 7;
+                }
+                </script>
+                <p>My mother has <span class="exampleSpanClass">blue</span> eyes.</p>
+                <div class='box'></div>
+                <div><span class="dot"></span></div>
+                <div id="container">
+                  <div class="testDiv"></div>
+                  <article class="red-bg">
+                      <table id="results">
+                          <tr>
+                              <td class="first-col">A</td>
+                              <td>B</td>
+                              <td>C</td>
+                          </tr>
+                          <tr>
+                              <td class="first-col second-row">1</td>
+                              <td>2</td>
+                              <td>3</td>
+                          </tr>
+                      </table>
+                  </article>
+                  <article class="red-bg">
+                      <p class="green-text">
+                          Pariatur occaecat veniam anim ipsum esse aute amet.
+                      </p>
+                  </article>
+                    <script>
+                    $( ".testDiv").css( "border", "3px solid red" );
+                    </script>
+                    <input type="text" id="testInput" name="user_txt">
+                   <button type="button" onclick="$('#my_div').myfunction();">Submit</button>
+                   <script>
+                     (function( $ ){
+                        $.fn.myfunction = function() {
+                          var txt = $('#txt_name').val();
+                          console.log(txt);
+                        }; 
+                      })( jQuery ); 
+                   </script>
+                <script>
+                  //Functional Programming Simple Tasks
+                function isItATomato(possibleTomato) {
+                  return new Promise((resolve, reject) => {
+                      if (possibleTomato === "tomato") {
+                          resolve(true);
+                      } else {
+                          reject("Not a tomato");
+                      }
+                  })
+                }
+                
+                if (isItATomato("tomato")) {
+                    console.log("tomato is a tomato");
+                }
+                
+                else if (isItATomato("apple")) {
+                    console.log("apple is a tomato");
+                }
+                else if (isItATomato(!"apple" || !"tomato")) {
+                  console.log("Not a tomato");
+                }
+                </script>
+                <script>
+                if (1) {
+                    console.log("1 - if");
+                } else {
+                    console.log("1 - else");
+                }
+                if ("true") {
+                    console.log("2 - if")
+                } else {
+                    console.log("2 - else")
+                }
+                if (0 === false) {
+                    console.log("3 - if")
+                } else {
+                    console.log("3 - else")
+                }
+                </script>
+                <script>
+                  function print(a, b) {
+                  a = 3;
+                  b = 5;
+                  console.log(a, b);
+                }
+                print();
+                </script>
+                <script>
+                  //Functional Programming Advanced Tasks
+                  function sumArray(array){
+                    let sum = 0;
+
+                    for (let i = 0; i < array.length; i++) {
+                        sum += array[i];
+                    }
+                    print(sum)
+                  }
+                  function print(n){
+                    console.log(n);
+                  }
+                  function minArray(array){
+                    let min = Math.min.apply(Math, array);
+                    print(min);
+                  }
+                  function addToElements(a, v) {
+                  var i, n = a.length;
+                  for (i = 0; i < n; ++i) {
+                      a[i] = a[n] + v;
+                  }
+                  print(a);
+                  }
+                  function aggregateValuesByID(){
+
+                  }
+                  sumArray([1, 2, 3, 4, 5]);
+                  minArray([1, 2, 3, 4, 5]);
+                  addToElements([1, 2, 3, 4, 5], 2);
+                  aggregateValuesByID();
+                </script>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
