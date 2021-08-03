@@ -1,0 +1,78 @@
+#msg2 {
+    width: 300px;
+    height: 100px;
+    resize: none;
+}
+
+#exampleDiv {
+    text-align: center;
+    color: red;
+  }
+
+.exampleSpanClass {
+    color: blue;
+}
+
+input, select, #name{
+    color: #ff0000;
+}
+
+#name:focus, input:focus {
+    color: #ff0000;
+}
+
+#colours {
+    background-color: green;
+}
+
+.bigText {
+    font-size: 25px; 
+}
+
+#container {
+    text-align: right;
+    color: white;
+}
+
+.red-bg{
+    display: inline;
+}
+
+#results{
+    border: 1px solid black;
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+.first-col{
+    column-rule-style: dotted;
+}
+
+.first-col second-row{
+    column-rule-style: dashed;
+}
+
+.green-text{
+    color: green;
+}
+
+.box {
+    float: left;
+    height: 20px;
+    width: 20px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    clear: both;
+    background-color: blue;
+    position: absolute;
+    left: 50%;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: yellow;
+    border-radius: 50%;
+    display: inline-block;
+  }
